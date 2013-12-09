@@ -15,6 +15,10 @@ module Liquid
       '>'  => :>,
       '>=' => :>=,
       '<=' => :<=,
+      'lt'  => :<,
+      'gt'  => :>,
+      'lte' => :<=,
+      'gte' => :>=,
       'contains' => lambda { |cond, left, right| left && right ? left.include?(right) : false }
     }
 
